@@ -15,6 +15,6 @@ export class ServiciosService {
   constructor(private http: HttpClient) { }
 
   getFravega():Observable<[]> {
-    return this.http.get<[]>('http://localhost:3000/api/fravega');
+    return this.http.get<[]>('https://scrapping-shops-backend.herokuapp.com/api/fravega');
   }
 }
